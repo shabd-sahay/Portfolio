@@ -1,0 +1,27 @@
+.card {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  height: 200px;
+  width: 335px;
+  color: blanchedalmond;
+  background-color: transparent;
+  border-color: cyan;
+  box-shadow: 100px;
+}
+h1{
+  text-align: center;
+  padding: 5%;
+  font-size: 50px;
+  color: aliceblue;
+}
+.bazz{
+  background-image: url('../assets/skillsbg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 14em;
+}
+h2{
+  letter-spacing: 5px;
+}
