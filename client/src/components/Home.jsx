@@ -8,8 +8,6 @@ const Home = () => {
   const textRef = useRef('I am a Full Stack Developer proficient in React.js, Flask, and Django, building dynamic web applications. Passionate about open-source and leadership, I create user-friendly solutions and lead technical initiatives. Connect with me to explore my projects.');
   const [showContactModal, setShowContactModal] = useState(false);
 
-  const connectButtonRef = useRef(null);
-
   useEffect(() => {
     const typingInterval = setInterval(() => {
       if (textRef.current.length > 0) {
@@ -23,11 +21,11 @@ const Home = () => {
   }, [textRef]); // Only re-run on textRef changes
 
   const handleConnectClick = () => {
-    setShowContactModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setShowContactModal(false);
+    // Scroll to the Contact section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -39,7 +37,7 @@ const Home = () => {
             <h1 className='fa'>HI ! I AM SHABD.</h1>
             <p>{text}</p>
           </div>
-          <button ref={connectButtonRef} className='fa btn' onClick={handleConnectClick}>
+          <button className='fa btn' onClick={handleConnectClick}>
             Let's Connect <i className="fa-solid fa-arrow-right" />
           </button>
         </div>
