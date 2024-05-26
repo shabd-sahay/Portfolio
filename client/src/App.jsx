@@ -1,6 +1,7 @@
-import Header from './components/Header'
-import Home from './components/Home'
-import Skills from './components/Skills'
+import React from 'react';
+import Header from './components/Header';
+import Home from './components/Home';
+import Skills from './components/Skills';
 import Works from './components/works';
 import Contact from './components/Contact';
 
@@ -32,19 +33,26 @@ function App() {
       description: 'proficiency in DSA, DBMS, Computer Networks and Mathematics'
     }
   ];
-  
-  
-  
 
   return (
-    <div className="App" style={{overflow: "hidden"}}>
+    <div className="App" style={{ overflow: "hidden" }}>
+      <header>
       <Header />
-      <Home />
-      <Skills cards={cards}/>
-      <Works />
-      <Contact />
+      </header>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="skills">
+        <Skills cards={cards} />
+      </section>
+      <section id="works">
+        <Works />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
