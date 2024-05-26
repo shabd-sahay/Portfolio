@@ -4,6 +4,6 @@
   },
   "scripts": {
     "start": "cd client && vite build && node server/server.js",
-    "build": "npm run build --prefix client" 
+    "build": "npm run build"
   }
 }
