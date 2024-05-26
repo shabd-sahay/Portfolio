@@ -27,15 +27,30 @@
   z-index: 1;
   width: 40%;
   padding-right: 2rem;
-  margin-right: 30%
+  margin-right: 30%;
 }
 
 @media screen and (max-width: 1000px) {
   .text {
     width: 55%;
     padding: 1.5em;
-    top: 40%;
-    transform: translate(-50%, -50%);
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    width: 70%;
+    padding: 1em;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    width: 90%;
+    padding: 0.5em;
+    margin-right: 0;
   }
 }
 
@@ -68,17 +83,15 @@ h1 {
 .image-container img {
   width: 100%;
   border-radius: 1rem;
-  
 }
 
 .profile {
   max-height: 90%;
   max-width: 70%;
-  
 }
 
-.button{
-  color:rgba(255, 218, 185, 0.346);
+.button {
+  color: rgba(255, 218, 185, 0.346);
 }
 
 @media screen and (max-width: 900px) {
@@ -87,10 +100,23 @@ h1 {
     justify-content: center;
     align-items: center;
     height: auto;
+    padding: 1rem;
   }
 
   .text, .image-container {
     width: 80%;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text, .image-container {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .my-custom-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 }

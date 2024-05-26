@@ -28,6 +28,11 @@
   padding-top: 5%;
   color: aliceblue;
 }
+@media screen {
+  .workh1{
+    padding-left: 5%;
+  }
+}
 
 .card-wrapper {
   flex: 0 0 auto;
