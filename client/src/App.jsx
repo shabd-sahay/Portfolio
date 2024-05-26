@@ -24,7 +24,7 @@ function App() {
     },
     {
       id: 4,
-      title: 'Plateform-To-Code',
+      title: 'Platform-To-Code',
       description: 'Visual Studio Code, PYCharm, Thonny, Sublime, IDLE'
     },
     {
